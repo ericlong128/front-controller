@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>Welcome Employee</h1>
+	<h3>Please login below</h3>
+
+	<!-- We need to create to take in parameters and pass those values to a servlet,
+		 which will return whether employee exists or not -->
+
+	<form method="POST" action="login">
+		<!-- sends this request to server, so we need a servlet at this location -->
+
+		<label>Username:</label> <input type="text" name="username"
+			placeholder="Enter username please"> <br /> 
+		
+		<label>Password:</label>
+		<input type="text" name="password" placeholder="Enter password please">
+		
+		<input type="submit" value="Login!">
+
+
+	</form>
+	
+	<!-- This will be one other form which includes a button to view all employees -->
+	<form method="GET" action="employees">
+	
+		<p>To see all employees in the system, please click below</p>
+		<input type="submit" value="Click me!">
+	
+	</form>
+
+</body>
+</html>
