@@ -5,7 +5,7 @@ import java.util.Optional;
 import com.revature.dao.EmployeeDao;
 import com.revature.models.Employee;
 
-public class EmployeeService {
+public class EmployeeService extends EmployeeDao{
 	
 	private EmployeeDao edao;
 	
